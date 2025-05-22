@@ -51,9 +51,8 @@
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
             <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
-            <!--Quyen BLE moi danh cho Android 12+-->
-            <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
         </config-file>
 
         <source-file src="src/android/BLECentralPlugin.java"
